@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="1" total="9" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="86786" started-at="2020-01-07T11:40:39 IST" finished-at="2020-01-07T11:42:06 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="86786" started-at="2020-01-07T11:40:39 IST" finished-at="2020-01-07T11:42:06 IST">
+      <class name="TestPages.HomePageTest">
+        <test-method status="PASS" signature="MenuClickTEst()[pri:0, instance:TestPages.HomePageTest@694e1548]" name="MenuClickTEst" duration-ms="8462" started-at="2020-01-07T11:40:59 IST" finished-at="2020-01-07T11:41:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MenuClickTEst -->
+        <test-method status="PASS" signature="PIMClickTEst()[pri:1, instance:TestPages.HomePageTest@694e1548]" name="PIMClickTEst" duration-ms="13164" started-at="2020-01-07T11:41:07 IST" finished-at="2020-01-07T11:41:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PIMClickTEst -->
+        <test-method status="PASS" signature="LeaveClickTEst()[pri:2, instance:TestPages.HomePageTest@694e1548]" name="LeaveClickTEst" duration-ms="14319" started-at="2020-01-07T11:41:20 IST" finished-at="2020-01-07T11:41:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeaveClickTEst -->
+        <test-method status="PASS" signature="TimeClickTEst()[pri:3, instance:TestPages.HomePageTest@694e1548]" name="TimeClickTEst" duration-ms="4916" started-at="2020-01-07T11:41:35 IST" finished-at="2020-01-07T11:41:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TimeClickTEst -->
+        <test-method status="PASS" signature="RecruitementClickTEst()[pri:4, instance:TestPages.HomePageTest@694e1548]" name="RecruitementClickTEst" duration-ms="5021" started-at="2020-01-07T11:41:40 IST" finished-at="2020-01-07T11:41:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RecruitementClickTEst -->
+        <test-method status="FAIL" signature="PerformanceClickTEst()[pri:5, instance:TestPages.HomePageTest@694e1548]" name="PerformanceClickTEst" duration-ms="20789" started-at="2020-01-07T11:41:45 IST" finished-at="2020-01-07T11:42:05 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Performance Tracker] but found [Performance Trackers]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Performance Tracker] but found [Performance Trackers]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at pages.HomePage.PerformanceClick(HomePage.java:126)
+at TestPages.HomePageTest.PerformanceClickTEst(HomePageTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PerformanceClickTEst -->
+      </class> <!-- TestPages.HomePageTest -->
+      <class name="TestPages.LoginPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:TestPages.LoginPageTest@1f554b06]" name="openBrowser" is-config="true" duration-ms="13397" started-at="2020-01-07T11:40:26 IST" finished-at="2020-01-07T11:40:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="LoginTest1(java.lang.String, java.lang.String)[pri:0, instance:TestPages.LoginPageTest@1f554b06]" name="LoginTest1" duration-ms="15189" started-at="2020-01-07T11:40:39 IST" data-provider="LoginData" finished-at="2020-01-07T11:40:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bhushan]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='quickLaunge']"}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-QMVA7R8', ip: '192.168.43.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Deep\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d12e4bbafe8b98cc652a85baa49328a
+*** Element info: {Using=xpath, value=//div[@class='quickLaunge']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='quickLaunge']"}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-QMVA7R8', ip: '192.168.43.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Deep\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d12e4bbafe8b98cc652a85baa49328a
+*** Element info: {Using=xpath, value=//div[@class='quickLaunge']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.LoginPage.LoginTest(LoginPage.java:47)
+at TestPages.LoginPageTest.LoginTest1(LoginPageTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+        <test-method status="PASS" signature="LoginTest1(java.lang.String, java.lang.String)[pri:0, instance:TestPages.LoginPageTest@1f554b06]" name="LoginTest1" duration-ms="3785" started-at="2020-01-07T11:40:55 IST" data-provider="LoginData" finished-at="2020-01-07T11:40:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+      </class> <!-- TestPages.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

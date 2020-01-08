@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="none">
+  <listeners>
+    <listener class-name="listeners.CustomListner"/>
+    <listener class-name="listeners.retryTransform"/>
+    <listener class-name="listeners.ExtentReportListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none" preserve-order="false">
+    <classes>
+      <class name="pages.LoginPage">
+        <methods>
+          <include name="PageValid"/>
+          <include name="LoginTest" invocation-numbers="0 0 0 0"/>
+          <include name="This"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
